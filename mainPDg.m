@@ -22,7 +22,7 @@ R      = 1.4;
 deltaR = 0;
 f      = 0.25;
 global phi
-phi    = 1.5;
+phi    = 1.0;
 
 % debug
 global Fs dtds

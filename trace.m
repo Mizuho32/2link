@@ -1,5 +1,6 @@
 r2d = @(ra) ra * 180 / pi;
 
+% print thetad, theta
 figure(2);
 clf
 
@@ -12,6 +13,7 @@ legend('\thetad_1', '\theta_1', ...
        '\thetad_2', '\theta_2');
 hold off;
 
+% print e
 figure(3);
 clf
 
@@ -21,16 +23,18 @@ plot(t, r2d(es(1, :)), t, r2d(es(2,:)))
 legend('e_1', 'e_2');
 hold off
 
+% print F and thetad'
 global Fs
 len = 0:(length(Fs)-1);
 figure(4);
 clf
 hold on
 plot(len, Fs(1,:), len, Fs(2,:));
-legend('F_1', 'F_2', '\dot \thetad_1');
 plot(len, r2d(dtds(1, :)), len, r2d(dtds(2,:)));
-legend('d \thetad_1', 'd \thetad_2');
+legend('F_1', 'F_2', 'd \thetad_1', 'd \thetad_2');
 hold off;
+
+% print theta'
 figure(5);
 clf
 plot(t, r2d(x(:,3)), t, r2d(x(:,4)));
