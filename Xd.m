@@ -1,8 +1,8 @@
 function [v] = Xd(t)
 global R deltaR f phi
 
-  %r = (R + deltaR*sin(20*pi*f*t));
-  r = R;
+  r = (R + deltaR*sin(20*pi*f*(t + phi)));
+  %r = R;
   v = [ r.*cos(2*pi*f*(t + phi))
         r.*sin(2*pi*f*(t + phi)) ];
 

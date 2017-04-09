@@ -3,11 +3,15 @@ figure(1);
 clf
 
 [x1, y1] = t2xy1(x);
-[x2, y2] = t2xy2(x);
+X2 = t2xy2(x');
+x2 = X2(1,:);
+y2 = X2(2,:);
 
 
 [p1_x0, p1_y0] = t2xy1(td_0(1));
-[p2_x0, p2_y0] = t2xy2(td_0');
+p2_0 = t2xy2(td_0);
+p2_x0 = p2_0(1,:);
+p2_y0 = p2_0(2,:);
 
 hold on
 plot(0,0, 'o');
@@ -19,7 +23,9 @@ e   = text(1.5,1.2, sprintf('%f',  0));
 
 [tdrefx1,tdrefy1] = t2xy1(x(:, 5:6));
 tdref1 = plot(0, 0, '*');
-[tdrefx2,tdrefy2] = t2xy2(x(:, 5:6));
+tdref = t2xy2(x(:, 5:6)');
+tdrefx2 = tdref(1,:);
+tdrefy2 = tdref(2,:);
 tdref2 = plot(0, 0, '*');
 ref = plot(0, 0, 'X');
 p1 = plot(p1_x0, p1_y0, 'o');

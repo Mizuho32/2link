@@ -11,7 +11,9 @@ tds_ode = x(:, 5:6)';
 hold on;
 plot(t, r2d(tds_ode(1,:)), t, r2d(x(:,1)))
 plot(t, r2d(tds_ode(2,:)), t, r2d(x(:,2)))
-plot(ts, r2d(tds(1,1:length(ts))), ts, r2d(tds(2,1:length(ts))));
+if sum(size(tds))
+  plot(ts, r2d(tds(1,1:length(ts))), ts, r2d(tds(2,1:length(ts))));
+end
 legend('\thetad_1', '\theta_1', ...
        '\thetad_2', '\theta_2', ...
        '\thetad_1 direct', '\thetad_2 direct');
@@ -28,19 +30,23 @@ legend('e_1', 'e_2');
 hold off
 
 % print F and thetad'
-figure(4);
-clf
-hold on
-plot(ts, kps(1,1:length(ts)), ts, kps(2,1:length(ts)));
-plot(ts, kds(1,1:length(ts)), ts, kds(2,1:length(ts)));
-legend('Kp_1', 'Kp_2', 'Kd_1', 'Kd_2');
-hold off;
+if sum(size(kps)) && sum(size(kps)) && sum(size(ts))
+  figure(4);
+  clf
+  hold on
+  plot(ts, kps(1,1:length(ts)), ts, kps(2,1:length(ts)));
+  plot(ts, kds(1,1:length(ts)), ts, kds(2,1:length(ts)));
+  legend('Kp_1', 'Kp_2', 'Kd_1', 'Kd_2');
+  hold off;
+end
 
 % print theta'
-figure(5);
-clf
-hold on
-plot(t, r2d(x(:,3)), t, r2d(x(:,4)));
-plot(ts, r2d(dtds(1, 1:length(ts))), ts, r2d(dtds(2,1:length(ts))));
-hold off
-legend('d\theta_1', 'd\theta_2', 'd \thetad_1', 'd \thetad_2');
+if sum(size(dtds)) && sum(size(ts))
+  figure(5);
+  clf
+  hold on
+  plot(t, r2d(x(:,3)), t, r2d(x(:,4)));
+  plot(ts, r2d(dtds(1, 1:length(ts))), ts, r2d(dtds(2,1:length(ts))));
+  hold off
+  legend('d\theta_1', 'd\theta_2', 'd \thetad_1', 'd \thetad_2');
+end

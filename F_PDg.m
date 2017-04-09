@@ -13,19 +13,18 @@ global dtds kds kps tds
 
   xd  = Xd(t);
   
-  td = xy2t(xd);
+  td = xy2t_2(xd);
   tds(:, length(tds)+1) = td;
   
   dxd = dXd(t);
 
-  %dtd = J(x(1), x(2))\dxd;
   dtd = J(td(1), td(2))\dxd;
   de  = dtd - x(3:4,1);
-  dtds(:, length(dtds)+1) = dtd;
+%  dtds(:, length(dtds)+1) = dtd;
   kd  = Kd*( de );
   kp  = Kp*( x(5:6,1) - x(1:2, 1));
-  kds(:, length(kds)+1) = kd;
-  kps(:, length(kps)+1) = kp;
+%  kds(:, length(kds)+1) = kd;
+%  kps(:, length(kps)+1) = kp;
 
   f = kp + kd + G;
 end
