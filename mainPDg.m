@@ -25,16 +25,20 @@ global phi
 phi    = 1.0;
 
 % debug
-global Fs dtds
+global ts Fs kds kps dtds tds
+ts = [];
 Fs = [];
+kps = [];
+kds = [];
 dtds = [];
+tds = [];
 
-td = xy2t(Xd(0));
+td_0 = xy2t(Xd(0));
 dt1_0 = 0;
 dt2_0 = 0;
 
-de  = td - td;
+de  = td_0 - td_0;
 
 time = [0 4];
 
-[t, x] = ode45('deltaPDg', time, [td; dt1_0; dt2_0; td; de]);
+[t, x] = ode45('deltaPDg', time, [td_0; dt1_0; dt2_0; td_0; de]);

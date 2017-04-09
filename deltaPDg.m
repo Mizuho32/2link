@@ -1,6 +1,6 @@
 function dx = deltaPDg(t, x)%t1,t2,dt1,dt2, l1,l2, m1,m2, I1,I2)
 global l1 l2 m1 m2 I1 I2 g
-global Fs
+global ts Fs
 
 t1  = x(1);
 t2  = x(2);
@@ -25,7 +25,8 @@ G = [ c1
       c2 ];
 [F, dtd, de] = F_PDg(t, x, G);
 
-Fs(:, length(Fs)+1) = F;
+%Fs(:, length(Fs)+1) = F;
+ts(:, length(ts)+1) = t;
 
 dx = [ dt1
       dt2

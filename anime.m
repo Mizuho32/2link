@@ -6,8 +6,8 @@ clf
 [x2, y2] = t2xy2(x);
 
 
-[p1_x0, p1_y0] = t2xy1(t1_0);
-[p2_x0, p2_y0] = t2xy2([t1_0 t2_0]);
+[p1_x0, p1_y0] = t2xy1(td_0(1));
+[p2_x0, p2_y0] = t2xy2(td_0');
 
 hold on
 plot(0,0, 'o');
