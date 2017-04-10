@@ -18,7 +18,8 @@ global dtds kds kps tds
   
   dxd = dXd(t);
 
-  dtd = J(td(1), td(2))\dxd;
+  %dtd = J(td(1), td(2))\dxd;
+  dtd = J(x(5,1), x(6,1))\dxd;
   de  = dtd - x(3:4,1);
 %  dtds(:, length(dtds)+1) = dtd;
   kd  = Kd*( de );

@@ -13,10 +13,10 @@ m2 = 1.0;
 I1 = 0.1;
 I2 = 0.01;
 
-Kp = [ 10 0
-       0 20 ];
+Kp = [ 100 0
+       0 40 ];
 Kd = [ 50 0
-       0 20 ];
+       0 50 ];
 
 R      = 1.2;
 deltaR = 0.2;
@@ -33,12 +33,12 @@ kds = [];
 dtds = [];
 tds = [];
 
-td_0 = xy2t(Xd(0));
+t_0   = xy2t_2(Xd(-1));
 dt1_0 = 0;
 dt2_0 = 0;
-
-de  = td_0 - td_0;
+td_0 = xy2t_2(Xd(0));
+e  = td_0 - t_0;
 
 time = [0 4];
 
-[t, x] = ode45('deltaPDg', time, [td_0; dt1_0; dt2_0; td_0; de]);
+[t, x] = ode45('deltaPDg', time, [t_0; dt1_0; dt2_0; td_0; e]);
