@@ -1,1 +1,4 @@
 *.m\~
+*.slx*
+slprj/
+*.mexa64

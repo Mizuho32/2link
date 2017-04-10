@@ -1,7 +1,5 @@
 global ts kds kps tds dtds
 
-r2d = @(ra) ra * 180 / pi;
-
 % print thetad, theta
 figure(2);
 clf
