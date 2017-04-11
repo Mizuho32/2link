@@ -39,6 +39,6 @@ dt2_0 = 0;
 td_0 = xy2t_2(Xd(0));
 e  = td_0 - t_0;
 
-time = [0 4];
+time = [0 10];
 
 [t, x] = ode45('deltaPDg', time, [t_0; dt1_0; dt2_0; td_0; e]);

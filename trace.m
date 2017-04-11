@@ -48,3 +48,19 @@ if sum(size(dtds)) && sum(size(ts))
   hold off
   legend('d\theta_1', 'd\theta_2', 'd \thetad_1', 'd \thetad_2');
 end
+
+figure(6)
+clf
+[refc1_1, refc1_2] = t2xy1(x(:, 5:6));
+refc2 = Xd(t');
+[c1, c2] = arm(x(:, 1:2)');
+
+hold on
+plot(refc1_1, refc1_2, 'b*');
+plot(refc2(1,:), refc2(2,:), 'g*');
+
+plot(c1(1,:), c1(2,:));
+plot(c2(1,:), c2(2,:));
+
+legend('ref1', 'ref2', 'ac 1', 'ac2');
+hold off
