@@ -10,6 +10,7 @@ global dtds kds kps tds
 %   td2 = x(6);
 %    e1 = x(7);
 %    e2 = x(8);
+%    v2g= x(9:10,1);
 
   dxd = dXd(t);
   ddxd=ddXd(t); 

@@ -13,6 +13,9 @@ p2_0 = t2xy2(td_0);
 p2_x0 = p2_0(1,:);
 p2_y0 = p2_0(2,:);
 
+f1 = F1(x);
+max_f1 = max(abs(f1));
+
 hold on
 plot(0,0, 'o');
 contour = Xd(t');
@@ -30,6 +33,8 @@ tdref2 = plot(0, 0, '*');
 ref = plot(0, 0, 'X');
 p1 = plot(p1_x0, p1_y0, 'o');
 p2 = plot(p2_x0, p2_y0, 'o');
+
+v_f1 = quiver(0, 0, 0, 0);
 
 hold off
 axis manual
@@ -57,7 +62,12 @@ for i = 1:length(x1)
   tex.String = sprintf('%f', t(i));
   e.String   = sprintf('%f', E(x(i,:)));
   
+  r = [x1(i); y1(i)];
+  r = f1(i)/max_f1 * (r/norm(r));
+  v_f1.UData = r(1);
+  v_f1.VData = r(2);
+  
   drawnow
-  pause(t(i) - now);
+  pause(4*(t(i) - now));
   now = t(i);
 end
