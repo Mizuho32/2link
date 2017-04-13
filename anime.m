@@ -14,7 +14,9 @@ p2_x0 = p2_0(1,:);
 p2_y0 = p2_0(2,:);
 
 f1 = F1(x);
+f1_2 = F1_2(x);
 max_f1 = max(abs(f1));
+max_f1_2 = max(diag(sqrt(f1_2'*f1_2)));
 
 hold on
 plot(0,0, 'o');
@@ -64,8 +66,9 @@ for i = 1:length(x1)
   
   r = [x1(i); y1(i)];
   r = f1(i)/max_f1 * (r/norm(r));
-  v_f1.UData = r(1);
-  v_f1.VData = r(2);
+  tmp = f1_2(:, i)/max_f1_2;
+  v_f1.UData = -tmp(1);
+  v_f1.VData = -tmp(2);
   
   drawnow
   pause(4*(t(i) - now));
