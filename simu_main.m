@@ -18,29 +18,20 @@ Kp = [ 120 0
 Kd = [ 100 0
        0 120 ];
 
-R      = 1.2;
+R      = 1.4;
 deltaR = 0.2;
 f      = 0.25;
 F      = 2*pi*f;
 global phi
 phi    = 1.0;
 
-% debug
-global ts Fs kds kps dtds tds
-ts = [];
-Fs = [];
-kps = [];
-kds = [];
-dtds = [];
-tds = [];
-
-t_0   = xy2t_2(Xd(-1));
+t_0   = [0; 0];
 dt1_0 = 0;
 dt2_0 = 0;
-td_0 = xy2t_2(Xd(0));
+td_0 =  xy2t_2(Xd(0));
 e  = td_0 - t_0;
 
-time = [0 10];
+const = [t_0; dt1_0; dt2_0];
 
-[t, x] = ode45('deltaDAC', time, [t_0; dt1_0; dt2_0; td_0; e]);
-Fc = Fc_DAC(t,x);
+sim('simu.slx');
+x(:, 5:6) = zeros(size(x,1),2);

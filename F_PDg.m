@@ -11,10 +11,10 @@ global dtds kds kps tds
 %    e1 = x(7);
 %    e2 = x(8);
 
-  xd  = Xd(t);
+  %xd  = Xd(t);
   
-  td = xy2t_2(xd);
-  tds(:, length(tds)+1) = td;
+  %td = xy2t_2(xd);
+  %tds(:, length(tds)+1) = td;
   
   dxd = dXd(t);
 

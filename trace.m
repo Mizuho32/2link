@@ -13,8 +13,10 @@ if sum(size(tds))
   plot(ts, r2d(tds(1,1:length(ts))), ts, r2d(tds(2,1:length(ts))));
 end
 legend('\thetad_1', '\theta_1', ...
-       '\thetad_2', '\theta_2', ...
-       '\thetad_1 direct', '\thetad_2 direct');
+       '\thetad_2', '\theta_2');
+       %'\thetad_1 direct', '\thetad_2 direct');
+xlabel('time [s]');
+ylabel('angle [rad]');
 hold off;
 
 % print e
@@ -25,6 +27,8 @@ es = x(:, 7:8)';
 hold on;
 plot(t, r2d(es(1, :)), t, r2d(es(2,:)))
 legend('e_1', 'e_2');
+xlabel('time [s]');
+ylabel('angle diff [rad]');
 hold off
 
 % print F and thetad'
@@ -54,13 +58,18 @@ clf
 [refc1_1, refc1_2] = t2xy1(x(:, 5:6));
 refc2 = Xd(t');
 [c1, c2] = arm(x(:, 1:2)');
+%[c1, c2] = arm(xy2t_2(Xd(t')));
 
 hold on
 plot(refc1_1, refc1_2, 'b*');
 plot(refc2(1,:), refc2(2,:), 'g*');
 
-plot(c1(1,:), c1(2,:));
-plot(c2(1,:), c2(2,:));
+plot(c1(1,:), c1(2,:), 'r-');
+plot(c2(1,:), c2(2,:), 'b-');
 
 legend('ref1', 'ref2', 'ac 1', 'ac2');
+
+xlabel('x [m]');
+ylabel('y [m]');
+
 hold off

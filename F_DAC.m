@@ -31,7 +31,4 @@ global dtds kds kps tds
 
   %f = kp + kd;
   f = ddtd + kp + kd;
-  if t > 5
-    f;
-  end
 end
