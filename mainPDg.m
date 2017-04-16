@@ -42,3 +42,4 @@ e  = td_0 - t_0;
 time = [0 10];
 
 [t, x] = ode45('deltaPDg', time, [t_0; dt1_0; dt2_0; td_0; e]);
+Fc = Fc_PDg(t,x);

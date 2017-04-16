@@ -34,3 +34,4 @@ e  = td_0 - t_0;
 const = [t_0; dt1_0; dt2_0; td_0; e];
 
 sim('simuDAC.slx');
+Fc = Fc_DAC(t,x);
