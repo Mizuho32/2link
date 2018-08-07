@@ -20,7 +20,7 @@ t2_0 = pi/4;
 dt1_0 = 0;
 dt2_0 = 0;
 
-time = [0 10];
+time = [0 20];
 
 [t, x] = ode45('delta', time, [t1_0; t2_0; dt1_0; dt2_0]);
 

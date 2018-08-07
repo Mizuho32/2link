@@ -1,0 +1,479 @@
+%% AMS-LaTeX Created with the Wolfram Language : www.wolfram.com
+
+\documentclass{article}
+\usepackage{amsmath, amssymb, graphics, setspace}
+
+\newcommand{\mathsym}[1]{{}}
+\newcommand{\unicode}[1]{{}}
+
+\newcounter{mathematicapage}
+\begin{document}
+
+\begin{doublespace}
+\noindent\(\pmb{\text{p1} =\text{lg1}*\{\text{Cos}[\text{$\theta $1}[t]], \text{Sin}[\text{$\theta $1}[t]]\} + \{x[t],y[t]\}}\\
+\pmb{\text{p2} =\text{  }\text{l1}*\{\text{Cos}[\text{$\theta $1}[t]], \text{Sin}[\text{$\theta $1}[t]]\}\text{  }+ \text{lg2}\{\text{Cos}[\text{$\theta
+$1}[t]+\text{$\theta $2}[t]],\text{Sin}[\text{$\theta $1}[t]+\text{$\theta $2}[t]]\} + \{x[t], y[t]\}}\\
+\pmb{\text{v1} = D[\text{p1}, t]}\\
+\pmb{\text{v2}=D[\text{p2},t]}\)
+\end{doublespace}
+
+\begin{doublespace}
+\noindent\(\{\text{lg1} \text{Cos}[\text{$\theta $1}[t]]+x[t],\text{lg1} \text{Sin}[\text{$\theta $1}[t]]+y[t]\}\)
+\end{doublespace}
+
+\begin{doublespace}
+\noindent\(\{\text{l1} \text{Cos}[\text{$\theta $1}[t]]+\text{lg2} \text{Cos}[\text{$\theta $1}[t]+\text{$\theta $2}[t]]+x[t],\text{l1} \text{Sin}[\text{$\theta
+$1}[t]]+\text{lg2} \text{Sin}[\text{$\theta $1}[t]+\text{$\theta $2}[t]]+y[t]\}\)
+\end{doublespace}
+
+\begin{doublespace}
+\noindent\(\left\{x'[t]-\text{lg1} \text{Sin}[\text{$\theta $1}[t]] \text{$\theta $1}'[t],y'[t]+\text{lg1} \text{Cos}[\text{$\theta $1}[t]] \text{$\theta
+$1}'[t]\right\}\)
+\end{doublespace}
+
+\begin{doublespace}
+\noindent\(\left\{x'[t]-\text{l1} \text{Sin}[\text{$\theta $1}[t]] \text{$\theta $1}'[t]-\text{lg2} \text{Sin}[\text{$\theta $1}[t]+\text{$\theta
+$2}[t]] \left(\text{$\theta $1}'[t]+\text{$\theta $2}'[t]\right),y'[t]+\text{l1} \text{Cos}[\text{$\theta $1}[t]] \text{$\theta $1}'[t]+\text{lg2}
+\text{Cos}[\text{$\theta $1}[t]+\text{$\theta $2}[t]] \left(\text{$\theta $1}'[t]+\text{$\theta $2}'[t]\right)\right\}\)
+\end{doublespace}
+
+\begin{doublespace}
+\noindent\(\pmb{\text{K1} = 1/2*\text{m1}*\text{v1}.\text{v1} + 1/2*\text{I1}*\text{$\theta $1}'[t]{}^{\wedge}2}\\
+\pmb{\text{K2} = 1/2*\text{m2}*\text{v2}.\text{v2} + 1/2*\text{I2}*(\text{$\theta $1}'[t] + \text{$\theta $2}'[t]){}^{\wedge}2}\)
+\end{doublespace}
+
+\begin{doublespace}
+\noindent\(\frac{1}{2} \text{I1} \text{$\theta $1}'[t]^2+\frac{1}{2} \text{m1} \left(\left(y'[t]+\text{lg1} \text{Cos}[\text{$\theta $1}[t]] \text{$\theta
+$1}'[t]\right)^2+\left(x'[t]-\text{lg1} \text{Sin}[\text{$\theta $1}[t]] \text{$\theta $1}'[t]\right)^2\right)\)
+\end{doublespace}
+
+\begin{doublespace}
+\noindent\(\frac{1}{2} \text{I2} \left(\text{$\theta $1}'[t]+\text{$\theta $2}'[t]\right)^2+\frac{1}{2} \text{m2} \left(\left(y'[t]+\text{l1} \text{Cos}[\text{$\theta
+$1}[t]] \text{$\theta $1}'[t]+\text{lg2} \text{Cos}[\text{$\theta $1}[t]+\text{$\theta $2}[t]] \left(\text{$\theta $1}'[t]+\text{$\theta $2}'[t]\right)\right)^2+\left(x'[t]-\text{l1}
+\text{Sin}[\text{$\theta $1}[t]] \text{$\theta $1}'[t]-\text{lg2} \text{Sin}[\text{$\theta $1}[t]+\text{$\theta $2}[t]] \left(\text{$\theta $1}'[t]+\text{$\theta
+$2}'[t]\right)\right)^2\right)\)
+\end{doublespace}
+
+\begin{doublespace}
+\noindent\(\pmb{\text{U1} = \text{m1}*g* (\text{lg1}*\text{Sin}[\text{$\theta $1}[t]] + y[t])}\\
+\pmb{\text{U2} = \text{m2}*g*(\text{l1}*\text{Sin}[\text{$\theta $1}[t]] + \text{lg2}*\text{Sin}[\text{$\theta $1}[t] + \text{$\theta $2}[t]] + y[t])}\)
+\end{doublespace}
+
+\begin{doublespace}
+\noindent\(g \text{m1} (\text{lg1} \text{Sin}[\text{$\theta $1}[t]]+y[t])\)
+\end{doublespace}
+
+\begin{doublespace}
+\noindent\(g \text{m2} (\text{l1} \text{Sin}[\text{$\theta $1}[t]]+\text{lg2} \text{Sin}[\text{$\theta $1}[t]+\text{$\theta $2}[t]]+y[t])\)
+\end{doublespace}
+
+\begin{doublespace}
+\noindent\(\pmb{L = (\text{K1}+\text{K2}) - (\text{U1}+\text{U2})}\)
+\end{doublespace}
+
+\begin{doublespace}
+\noindent\(-g \text{m1} (\text{lg1} \text{Sin}[\text{$\theta $1}[t]]+y[t])-g \text{m2} (\text{l1} \text{Sin}[\text{$\theta $1}[t]]+\text{lg2} \text{Sin}[\text{$\theta
+$1}[t]+\text{$\theta $2}[t]]+y[t])+\frac{1}{2} \text{I1} \text{$\theta $1}'[t]^2+\frac{1}{2} \text{m1} \left(\left(y'[t]+\text{lg1} \text{Cos}[\text{$\theta
+$1}[t]] \text{$\theta $1}'[t]\right)^2+\left(x'[t]-\text{lg1} \text{Sin}[\text{$\theta $1}[t]] \text{$\theta $1}'[t]\right)^2\right)+\frac{1}{2}
+\text{I2} \left(\text{$\theta $1}'[t]+\text{$\theta $2}'[t]\right)^2+\frac{1}{2} \text{m2} \left(\left(y'[t]+\text{l1} \text{Cos}[\text{$\theta $1}[t]]
+\text{$\theta $1}'[t]+\text{lg2} \text{Cos}[\text{$\theta $1}[t]+\text{$\theta $2}[t]] \left(\text{$\theta $1}'[t]+\text{$\theta $2}'[t]\right)\right)^2+\left(x'[t]-\text{l1}
+\text{Sin}[\text{$\theta $1}[t]] \text{$\theta $1}'[t]-\text{lg2} \text{Sin}[\text{$\theta $1}[t]+\text{$\theta $2}[t]] \left(\text{$\theta $1}'[t]+\text{$\theta
+$2}'[t]\right)\right)^2\right)\)
+\end{doublespace}
+
+\begin{doublespace}
+\noindent\(\pmb{q = \{ x[t],}\\
+\pmb{\text{        }y[t],}\\
+\pmb{\text{ }\text{$\theta $1}[t],}\\
+\pmb{\text{ }\text{$\theta $2}[t] \}}\\
+\pmb{\text{dq} = D[q,t]}\\
+\pmb{\text{ddq} = D[\text{dq},t]}\)
+\end{doublespace}
+
+\begin{doublespace}
+\noindent\(\{x[t],y[t],\text{$\theta $1}[t],\text{$\theta $2}[t]\}\)
+\end{doublespace}
+
+\begin{doublespace}
+\noindent\(\left\{x'[t],y'[t],\text{$\theta $1}'[t],\text{$\theta $2}'[t]\right\}\)
+\end{doublespace}
+
+\begin{doublespace}
+\noindent\(\left\{x''[t],y''[t],\text{$\theta $1}''[t],\text{$\theta $2}''[t]\right\}\)
+\end{doublespace}
+
+\begin{doublespace}
+\noindent\(\pmb{\text{Eq} = \text{Simplify}[}\\
+\pmb{\text{         }\{ D[\text{  }D[L, x'[t]], t ] - D[ L, x[t] ],}\\
+\pmb{\text{         }D[\text{  }D[L, y'[t]], t ] - D[ L, y[t] ],}\\
+\pmb{\text{}D[\text{  }D[L, \text{$\theta $1}'[t]], t ] - D[ L, \text{$\theta $1}[t] ],}\\
+\pmb{\text{}D[\text{  }D[L, \text{$\theta $2}'[t]], t ] - D[ L, \text{$\theta $2}[t] ] \}]}\\
+\pmb{\text{}\text{MatrixForm}[\text{Eq}]}\)
+\end{doublespace}
+
+\begin{doublespace}
+\noindent\(\left\{\text{m1} \left(-\text{lg1} \text{Cos}[\text{$\theta $1}[t]] \text{$\theta $1}'[t]^2+x''[t]-\text{lg1} \text{Sin}[\text{$\theta
+$1}[t]] \text{$\theta $1}''[t]\right)+\text{m2} \left(-\text{l1} \text{Cos}[\text{$\theta $1}[t]] \text{$\theta $1}'[t]^2-\text{lg2} \text{Cos}[\text{$\theta
+$1}[t]+\text{$\theta $2}[t]] \left(\text{$\theta $1}'[t]+\text{$\theta $2}'[t]\right)^2+x''[t]-\text{l1} \text{Sin}[\text{$\theta $1}[t]] \text{$\theta
+$1}''[t]-\text{lg2} \text{Sin}[\text{$\theta $1}[t]+\text{$\theta $2}[t]] \left(\text{$\theta $1}''[t]+\text{$\theta $2}''[t]\right)\right),g \text{m1}+g
+\text{m2}+\text{m1} \left(-\text{lg1} \text{Sin}[\text{$\theta $1}[t]] \text{$\theta $1}'[t]^2+y''[t]+\text{lg1} \text{Cos}[\text{$\theta $1}[t]]
+\text{$\theta $1}''[t]\right)+\text{m2} \left(-\text{l1} \text{Sin}[\text{$\theta $1}[t]] \text{$\theta $1}'[t]^2-\text{lg2} \text{Sin}[\text{$\theta
+$1}[t]+\text{$\theta $2}[t]] \left(\text{$\theta $1}'[t]+\text{$\theta $2}'[t]\right)^2+y''[t]+\text{l1} \text{Cos}[\text{$\theta $1}[t]] \text{$\theta
+$1}''[t]+\text{lg2} \text{Cos}[\text{$\theta $1}[t]+\text{$\theta $2}[t]] \left(\text{$\theta $1}''[t]+\text{$\theta $2}''[t]\right)\right),g \text{lg1}
+\text{m1} \text{Cos}[\text{$\theta $1}[t]]+g \text{l1} \text{m2} \text{Cos}[\text{$\theta $1}[t]]+g \text{lg2} \text{m2} \text{Cos}[\text{$\theta
+$1}[t]+\text{$\theta $2}[t]]-2 \text{l1} \text{lg2} \text{m2} \text{Sin}[\text{$\theta $2}[t]] \text{$\theta $1}'[t] \text{$\theta $2}'[t]-\text{l1}
+\text{lg2} \text{m2} \text{Sin}[\text{$\theta $2}[t]] \text{$\theta $2}'[t]^2-\text{lg1} \text{m1} \text{Sin}[\text{$\theta $1}[t]] x''[t]-\text{l1}
+\text{m2} \text{Sin}[\text{$\theta $1}[t]] x''[t]-\text{lg2} \text{m2} \text{Sin}[\text{$\theta $1}[t]+\text{$\theta $2}[t]] x''[t]+\text{lg1} \text{m1}
+\text{Cos}[\text{$\theta $1}[t]] y''[t]+\text{l1} \text{m2} \text{Cos}[\text{$\theta $1}[t]] y''[t]+\text{lg2} \text{m2} \text{Cos}[\text{$\theta
+$1}[t]+\text{$\theta $2}[t]] y''[t]+\text{I1} \text{$\theta $1}''[t]+\text{I2} \text{$\theta $1}''[t]+\text{lg1}^2 \text{m1} \text{$\theta $1}''[t]+\text{l1}^2
+\text{m2} \text{$\theta $1}''[t]+\text{lg2}^2 \text{m2} \text{$\theta $1}''[t]+2 \text{l1} \text{lg2} \text{m2} \text{Cos}[\text{$\theta $2}[t]]
+\text{$\theta $1}''[t]+\text{I2} \text{$\theta $2}''[t]+\text{lg2}^2 \text{m2} \text{$\theta $2}''[t]+\text{l1} \text{lg2} \text{m2} \text{Cos}[\text{$\theta
+$2}[t]] \text{$\theta $2}''[t],g \text{lg2} \text{m2} \text{Cos}[\text{$\theta $1}[t]+\text{$\theta $2}[t]]+\text{l1} \text{lg2} \text{m2} \text{Sin}[\text{$\theta
+$2}[t]] \text{$\theta $1}'[t]^2-\text{lg2} \text{m2} \text{Sin}[\text{$\theta $1}[t]+\text{$\theta $2}[t]] x''[t]+\text{lg2} \text{m2} \text{Cos}[\text{$\theta
+$1}[t]+\text{$\theta $2}[t]] y''[t]+\text{I2} \text{$\theta $1}''[t]+\text{lg2}^2 \text{m2} \text{$\theta $1}''[t]+\text{l1} \text{lg2} \text{m2}
+\text{Cos}[\text{$\theta $2}[t]] \text{$\theta $1}''[t]+\text{I2} \text{$\theta $2}''[t]+\text{lg2}^2 \text{m2} \text{$\theta $2}''[t]\right\}\)
+\end{doublespace}
+
+\begin{doublespace}
+\noindent\(\left(
+\begin{array}{c}
+ \text{m1} \left(-\text{lg1} \text{Cos}[\text{$\theta $1}[t]] \text{$\theta $1}'[t]^2+x''[t]-\text{lg1} \text{Sin}[\text{$\theta $1}[t]] \text{$\theta
+$1}''[t]\right)+\text{m2} \left(-\text{l1} \text{Cos}[\text{$\theta $1}[t]] \text{$\theta $1}'[t]^2-\text{lg2} \text{Cos}[\text{$\theta $1}[t]+\text{$\theta
+$2}[t]] \left(\text{$\theta $1}'[t]+\text{$\theta $2}'[t]\right)^2+x''[t]-\text{l1} \text{Sin}[\text{$\theta $1}[t]] \text{$\theta $1}''[t]-\text{lg2}
+\text{Sin}[\text{$\theta $1}[t]+\text{$\theta $2}[t]] \left(\text{$\theta $1}''[t]+\text{$\theta $2}''[t]\right)\right) \\
+ g \text{m1}+g \text{m2}+\text{m1} \left(-\text{lg1} \text{Sin}[\text{$\theta $1}[t]] \text{$\theta $1}'[t]^2+y''[t]+\text{lg1} \text{Cos}[\text{$\theta
+$1}[t]] \text{$\theta $1}''[t]\right)+\text{m2} \left(-\text{l1} \text{Sin}[\text{$\theta $1}[t]] \text{$\theta $1}'[t]^2-\text{lg2} \text{Sin}[\text{$\theta
+$1}[t]+\text{$\theta $2}[t]] \left(\text{$\theta $1}'[t]+\text{$\theta $2}'[t]\right)^2+y''[t]+\text{l1} \text{Cos}[\text{$\theta $1}[t]] \text{$\theta
+$1}''[t]+\text{lg2} \text{Cos}[\text{$\theta $1}[t]+\text{$\theta $2}[t]] \left(\text{$\theta $1}''[t]+\text{$\theta $2}''[t]\right)\right) \\
+ g \text{lg1} \text{m1} \text{Cos}[\text{$\theta $1}[t]]+g \text{l1} \text{m2} \text{Cos}[\text{$\theta $1}[t]]+g \text{lg2} \text{m2} \text{Cos}[\text{$\theta
+$1}[t]+\text{$\theta $2}[t]]-2 \text{l1} \text{lg2} \text{m2} \text{Sin}[\text{$\theta $2}[t]] \text{$\theta $1}'[t] \text{$\theta $2}'[t]-\text{l1}
+\text{lg2} \text{m2} \text{Sin}[\text{$\theta $2}[t]] \text{$\theta $2}'[t]^2-\text{lg1} \text{m1} \text{Sin}[\text{$\theta $1}[t]] x''[t]-\text{l1}
+\text{m2} \text{Sin}[\text{$\theta $1}[t]] x''[t]-\text{lg2} \text{m2} \text{Sin}[\text{$\theta $1}[t]+\text{$\theta $2}[t]] x''[t]+\text{lg1} \text{m1}
+\text{Cos}[\text{$\theta $1}[t]] y''[t]+\text{l1} \text{m2} \text{Cos}[\text{$\theta $1}[t]] y''[t]+\text{lg2} \text{m2} \text{Cos}[\text{$\theta
+$1}[t]+\text{$\theta $2}[t]] y''[t]+\text{I1} \text{$\theta $1}''[t]+\text{I2} \text{$\theta $1}''[t]+\text{lg1}^2 \text{m1} \text{$\theta $1}''[t]+\text{l1}^2
+\text{m2} \text{$\theta $1}''[t]+\text{lg2}^2 \text{m2} \text{$\theta $1}''[t]+2 \text{l1} \text{lg2} \text{m2} \text{Cos}[\text{$\theta $2}[t]]
+\text{$\theta $1}''[t]+\text{I2} \text{$\theta $2}''[t]+\text{lg2}^2 \text{m2} \text{$\theta $2}''[t]+\text{l1} \text{lg2} \text{m2} \text{Cos}[\text{$\theta
+$2}[t]] \text{$\theta $2}''[t] \\
+ g \text{lg2} \text{m2} \text{Cos}[\text{$\theta $1}[t]+\text{$\theta $2}[t]]+\text{l1} \text{lg2} \text{m2} \text{Sin}[\text{$\theta $2}[t]] \text{$\theta
+$1}'[t]^2-\text{lg2} \text{m2} \text{Sin}[\text{$\theta $1}[t]+\text{$\theta $2}[t]] x''[t]+\text{lg2} \text{m2} \text{Cos}[\text{$\theta $1}[t]+\text{$\theta
+$2}[t]] y''[t]+\text{I2} \text{$\theta $1}''[t]+\text{lg2}^2 \text{m2} \text{$\theta $1}''[t]+\text{l1} \text{lg2} \text{m2} \text{Cos}[\text{$\theta
+$2}[t]] \text{$\theta $1}''[t]+\text{I2} \text{$\theta $2}''[t]+\text{lg2}^2 \text{m2} \text{$\theta $2}''[t] \\
+\end{array}
+\right)\)
+\end{doublespace}
+
+\begin{doublespace}
+\noindent\(\pmb{\text{(*}\text{Dm} = \text{Coefficient}[\text{Eq}[[1,\text{All}]], \text{ddq}]\text{*)}}\\
+\pmb{\text{Dm} = \text{Simplify}[\{}\\
+\pmb{\text{Coefficient}[\text{Eq}[[1]], \text{ddq}],}\\
+\pmb{\text{Coefficient}[\text{Eq}[[2]], \text{ddq}],}\\
+\pmb{\text{Coefficient}[\text{Eq}[[3]], \text{ddq}],}\\
+\pmb{\text{Coefficient}[\text{Eq}[[4]], \text{ddq}]}\\
+\pmb{\}]}\)
+\end{doublespace}
+
+\begin{doublespace}
+\noindent\(\left\{\{\text{m1}+\text{m2},0,-(\text{lg1} \text{m1}+\text{l1} \text{m2}) \text{Sin}[\text{$\theta $1}[t]]-\text{lg2} \text{m2} \text{Sin}[\text{$\theta
+$1}[t]+\text{$\theta $2}[t]],-\text{lg2} \text{m2} \text{Sin}[\text{$\theta $1}[t]+\text{$\theta $2}[t]]\},\{0,\text{m1}+\text{m2},(\text{lg1} \text{m1}+\text{l1}
+\text{m2}) \text{Cos}[\text{$\theta $1}[t]]+\text{lg2} \text{m2} \text{Cos}[\text{$\theta $1}[t]+\text{$\theta $2}[t]],\text{lg2} \text{m2} \text{Cos}[\text{$\theta
+$1}[t]+\text{$\theta $2}[t]]\},\left\{-(\text{lg1} \text{m1}+\text{l1} \text{m2}) \text{Sin}[\text{$\theta $1}[t]]-\text{lg2} \text{m2} \text{Sin}[\text{$\theta
+$1}[t]+\text{$\theta $2}[t]],(\text{lg1} \text{m1}+\text{l1} \text{m2}) \text{Cos}[\text{$\theta $1}[t]]+\text{lg2} \text{m2} \text{Cos}[\text{$\theta
+$1}[t]+\text{$\theta $2}[t]],\text{I1}+\text{I2}+\text{lg1}^2 \text{m1}+\text{l1}^2 \text{m2}+\text{lg2}^2 \text{m2}+2 \text{l1} \text{lg2} \text{m2}
+\text{Cos}[\text{$\theta $2}[t]],\text{I2}+\text{lg2}^2 \text{m2}+\text{l1} \text{lg2} \text{m2} \text{Cos}[\text{$\theta $2}[t]]\right\},\left\{-\text{lg2}
+\text{m2} \text{Sin}[\text{$\theta $1}[t]+\text{$\theta $2}[t]],\text{lg2} \text{m2} \text{Cos}[\text{$\theta $1}[t]+\text{$\theta $2}[t]],\text{I2}+\text{lg2}^2
+\text{m2}+\text{l1} \text{lg2} \text{m2} \text{Cos}[\text{$\theta $2}[t]],\text{I2}+\text{lg2}^2 \text{m2}\right\}\right\}\)
+\end{doublespace}
+
+\begin{doublespace}
+\noindent\(\pmb{\text{MatrixForm}[\text{Dm}]}\)
+\end{doublespace}
+
+\begin{doublespace}
+\noindent\(\left(
+\begin{array}{cccc}
+ \text{m1}+\text{m2} & 0 & -(\text{lg1} \text{m1}+\text{l1} \text{m2}) \text{Sin}[\text{$\theta $1}[t]]-\text{lg2} \text{m2} \text{Sin}[\text{$\theta
+$1}[t]+\text{$\theta $2}[t]] & -\text{lg2} \text{m2} \text{Sin}[\text{$\theta $1}[t]+\text{$\theta $2}[t]] \\
+ 0 & \text{m1}+\text{m2} & (\text{lg1} \text{m1}+\text{l1} \text{m2}) \text{Cos}[\text{$\theta $1}[t]]+\text{lg2} \text{m2} \text{Cos}[\text{$\theta
+$1}[t]+\text{$\theta $2}[t]] & \text{lg2} \text{m2} \text{Cos}[\text{$\theta $1}[t]+\text{$\theta $2}[t]] \\
+ -(\text{lg1} \text{m1}+\text{l1} \text{m2}) \text{Sin}[\text{$\theta $1}[t]]-\text{lg2} \text{m2} \text{Sin}[\text{$\theta $1}[t]+\text{$\theta
+$2}[t]] & (\text{lg1} \text{m1}+\text{l1} \text{m2}) \text{Cos}[\text{$\theta $1}[t]]+\text{lg2} \text{m2} \text{Cos}[\text{$\theta $1}[t]+\text{$\theta
+$2}[t]] & \text{I1}+\text{I2}+\text{lg1}^2 \text{m1}+\text{l1}^2 \text{m2}+\text{lg2}^2 \text{m2}+2 \text{l1} \text{lg2} \text{m2} \text{Cos}[\text{$\theta
+$2}[t]] & \text{I2}+\text{lg2}^2 \text{m2}+\text{l1} \text{lg2} \text{m2} \text{Cos}[\text{$\theta $2}[t]] \\
+ -\text{lg2} \text{m2} \text{Sin}[\text{$\theta $1}[t]+\text{$\theta $2}[t]] & \text{lg2} \text{m2} \text{Cos}[\text{$\theta $1}[t]+\text{$\theta
+$2}[t]] & \text{I2}+\text{lg2}^2 \text{m2}+\text{l1} \text{lg2} \text{m2} \text{Cos}[\text{$\theta $2}[t]] & \text{I2}+\text{lg2}^2 \text{m2} \\
+\end{array}
+\right)\)
+\end{doublespace}
+
+\begin{doublespace}
+\noindent\(\pmb{\text{Dimensions}[\text{Dm}.\text{ddq}]}\\
+\pmb{\text{Dimensions}[\text{Eq}]}\)
+\end{doublespace}
+
+\begin{doublespace}
+\noindent\(\{4\}\)
+\end{doublespace}
+
+\begin{doublespace}
+\noindent\(\{4\}\)
+\end{doublespace}
+
+\begin{doublespace}
+\noindent\(\pmb{h = \text{Simplify}[\text{Eq} - \text{Dm}.\text{ddq}]}\\
+\pmb{\text{MatrixForm}[h]}\)
+\end{doublespace}
+
+\begin{doublespace}
+\noindent\(\left\{-((\text{lg1} \text{m1}+\text{l1} \text{m2}) \text{Cos}[\text{$\theta $1}[t]]+\text{lg2} \text{m2} \text{Cos}[\text{$\theta $1}[t]+\text{$\theta
+$2}[t]]) \text{$\theta $1}'[t]^2-2 \text{lg2} \text{m2} \text{Cos}[\text{$\theta $1}[t]+\text{$\theta $2}[t]] \text{$\theta $1}'[t] \text{$\theta
+$2}'[t]-\text{lg2} \text{m2} \text{Cos}[\text{$\theta $1}[t]+\text{$\theta $2}[t]] \text{$\theta $2}'[t]^2,g (\text{m1}+\text{m2})-((\text{lg1} \text{m1}+\text{l1}
+\text{m2}) \text{Sin}[\text{$\theta $1}[t]]+\text{lg2} \text{m2} \text{Sin}[\text{$\theta $1}[t]+\text{$\theta $2}[t]]) \text{$\theta $1}'[t]^2-2
+\text{lg2} \text{m2} \text{Sin}[\text{$\theta $1}[t]+\text{$\theta $2}[t]] \text{$\theta $1}'[t] \text{$\theta $2}'[t]-\text{lg2} \text{m2} \text{Sin}[\text{$\theta
+$1}[t]+\text{$\theta $2}[t]] \text{$\theta $2}'[t]^2,g (\text{lg1} \text{m1} \text{Cos}[\text{$\theta $1}[t]]+\text{l1} \text{m2} \text{Cos}[\text{$\theta
+$1}[t]]+\text{lg2} \text{m2} \text{Cos}[\text{$\theta $1}[t]+\text{$\theta $2}[t]])-2 \text{l1} \text{lg2} \text{m2} \text{Sin}[\text{$\theta $2}[t]]
+\text{$\theta $1}'[t] \text{$\theta $2}'[t]-\text{l1} \text{lg2} \text{m2} \text{Sin}[\text{$\theta $2}[t]] \text{$\theta $2}'[t]^2,\text{lg2} \text{m2}
+\left(g \text{Cos}[\text{$\theta $1}[t]+\text{$\theta $2}[t]]+\text{l1} \text{Sin}[\text{$\theta $2}[t]] \text{$\theta $1}'[t]^2\right)\right\}\)
+\end{doublespace}
+
+\begin{doublespace}
+\noindent\(\left(
+\begin{array}{c}
+ -((\text{lg1} \text{m1}+\text{l1} \text{m2}) \text{Cos}[\text{$\theta $1}[t]]+\text{lg2} \text{m2} \text{Cos}[\text{$\theta $1}[t]+\text{$\theta
+$2}[t]]) \text{$\theta $1}'[t]^2-2 \text{lg2} \text{m2} \text{Cos}[\text{$\theta $1}[t]+\text{$\theta $2}[t]] \text{$\theta $1}'[t] \text{$\theta
+$2}'[t]-\text{lg2} \text{m2} \text{Cos}[\text{$\theta $1}[t]+\text{$\theta $2}[t]] \text{$\theta $2}'[t]^2 \\
+ g (\text{m1}+\text{m2})-((\text{lg1} \text{m1}+\text{l1} \text{m2}) \text{Sin}[\text{$\theta $1}[t]]+\text{lg2} \text{m2} \text{Sin}[\text{$\theta
+$1}[t]+\text{$\theta $2}[t]]) \text{$\theta $1}'[t]^2-2 \text{lg2} \text{m2} \text{Sin}[\text{$\theta $1}[t]+\text{$\theta $2}[t]] \text{$\theta
+$1}'[t] \text{$\theta $2}'[t]-\text{lg2} \text{m2} \text{Sin}[\text{$\theta $1}[t]+\text{$\theta $2}[t]] \text{$\theta $2}'[t]^2 \\
+ g (\text{lg1} \text{m1} \text{Cos}[\text{$\theta $1}[t]]+\text{l1} \text{m2} \text{Cos}[\text{$\theta $1}[t]]+\text{lg2} \text{m2} \text{Cos}[\text{$\theta
+$1}[t]+\text{$\theta $2}[t]])-2 \text{l1} \text{lg2} \text{m2} \text{Sin}[\text{$\theta $2}[t]] \text{$\theta $1}'[t] \text{$\theta $2}'[t]-\text{l1}
+\text{lg2} \text{m2} \text{Sin}[\text{$\theta $2}[t]] \text{$\theta $2}'[t]^2 \\
+ \text{lg2} \text{m2} \left(g \text{Cos}[\text{$\theta $1}[t]+\text{$\theta $2}[t]]+\text{l1} \text{Sin}[\text{$\theta $2}[t]] \text{$\theta $1}'[t]^2\right)
+\\
+\end{array}
+\right)\)
+\end{doublespace}
+
+\begin{doublespace}
+\noindent\(\pmb{\text{Jc} = \{ \{1,0,0,0\},}\\
+\pmb{\text{          }\{0,1,0,0\} \}}\)
+\end{doublespace}
+
+\begin{doublespace}
+\noindent\(\{\{1,0,0,0\},\{0,1,0,0\}\}\)
+\end{doublespace}
+
+\begin{doublespace}
+\noindent\(\pmb{\text{DM} = \text{Join}[ \text{Join}[\text{Dm}, \text{Transpose}[\text{Jc}], 2], \text{Join}[\text{Jc}, \{\{0,0\},\{0,0\}\},2], 1]}\\
+\pmb{\text{MatrixForm}[\text{DM}]}\\
+\pmb{\tau  = \{0, 0, \text{$\tau $1}, \text{$\tau $2}\}}\)
+\end{doublespace}
+
+\begin{doublespace}
+\noindent\(\left\{\{\text{m1}+\text{m2},0,-(\text{lg1} \text{m1}+\text{l1} \text{m2}) \text{Sin}[\text{$\theta $1}[t]]-\text{lg2} \text{m2} \text{Sin}[\text{$\theta
+$1}[t]+\text{$\theta $2}[t]],-\text{lg2} \text{m2} \text{Sin}[\text{$\theta $1}[t]+\text{$\theta $2}[t]],1,0\},\{0,\text{m1}+\text{m2},(\text{lg1}
+\text{m1}+\text{l1} \text{m2}) \text{Cos}[\text{$\theta $1}[t]]+\text{lg2} \text{m2} \text{Cos}[\text{$\theta $1}[t]+\text{$\theta $2}[t]],\text{lg2}
+\text{m2} \text{Cos}[\text{$\theta $1}[t]+\text{$\theta $2}[t]],0,1\},\left\{-(\text{lg1} \text{m1}+\text{l1} \text{m2}) \text{Sin}[\text{$\theta
+$1}[t]]-\text{lg2} \text{m2} \text{Sin}[\text{$\theta $1}[t]+\text{$\theta $2}[t]],(\text{lg1} \text{m1}+\text{l1} \text{m2}) \text{Cos}[\text{$\theta
+$1}[t]]+\text{lg2} \text{m2} \text{Cos}[\text{$\theta $1}[t]+\text{$\theta $2}[t]],\text{I1}+\text{I2}+\text{lg1}^2 \text{m1}+\text{l1}^2 \text{m2}+\text{lg2}^2
+\text{m2}+2 \text{l1} \text{lg2} \text{m2} \text{Cos}[\text{$\theta $2}[t]],\text{I2}+\text{lg2}^2 \text{m2}+\text{l1} \text{lg2} \text{m2} \text{Cos}[\text{$\theta
+$2}[t]],0,0\right\},\left\{-\text{lg2} \text{m2} \text{Sin}[\text{$\theta $1}[t]+\text{$\theta $2}[t]],\text{lg2} \text{m2} \text{Cos}[\text{$\theta
+$1}[t]+\text{$\theta $2}[t]],\text{I2}+\text{lg2}^2 \text{m2}+\text{l1} \text{lg2} \text{m2} \text{Cos}[\text{$\theta $2}[t]],\text{I2}+\text{lg2}^2
+\text{m2},0,0\right\},\{1,0,0,0,0,0\},\{0,1,0,0,0,0\}\right\}\)
+\end{doublespace}
+
+\begin{doublespace}
+\noindent\(\left(
+\begin{array}{cccccc}
+ \text{m1}+\text{m2} & 0 & -(\text{lg1} \text{m1}+\text{l1} \text{m2}) \text{Sin}[\text{$\theta $1}[t]]-\text{lg2} \text{m2} \text{Sin}[\text{$\theta
+$1}[t]+\text{$\theta $2}[t]] & -\text{lg2} \text{m2} \text{Sin}[\text{$\theta $1}[t]+\text{$\theta $2}[t]] & 1 & 0 \\
+ 0 & \text{m1}+\text{m2} & (\text{lg1} \text{m1}+\text{l1} \text{m2}) \text{Cos}[\text{$\theta $1}[t]]+\text{lg2} \text{m2} \text{Cos}[\text{$\theta
+$1}[t]+\text{$\theta $2}[t]] & \text{lg2} \text{m2} \text{Cos}[\text{$\theta $1}[t]+\text{$\theta $2}[t]] & 0 & 1 \\
+ -(\text{lg1} \text{m1}+\text{l1} \text{m2}) \text{Sin}[\text{$\theta $1}[t]]-\text{lg2} \text{m2} \text{Sin}[\text{$\theta $1}[t]+\text{$\theta
+$2}[t]] & (\text{lg1} \text{m1}+\text{l1} \text{m2}) \text{Cos}[\text{$\theta $1}[t]]+\text{lg2} \text{m2} \text{Cos}[\text{$\theta $1}[t]+\text{$\theta
+$2}[t]] & \text{I1}+\text{I2}+\text{lg1}^2 \text{m1}+\text{l1}^2 \text{m2}+\text{lg2}^2 \text{m2}+2 \text{l1} \text{lg2} \text{m2} \text{Cos}[\text{$\theta
+$2}[t]] & \text{I2}+\text{lg2}^2 \text{m2}+\text{l1} \text{lg2} \text{m2} \text{Cos}[\text{$\theta $2}[t]] & 0 & 0 \\
+ -\text{lg2} \text{m2} \text{Sin}[\text{$\theta $1}[t]+\text{$\theta $2}[t]] & \text{lg2} \text{m2} \text{Cos}[\text{$\theta $1}[t]+\text{$\theta
+$2}[t]] & \text{I2}+\text{lg2}^2 \text{m2}+\text{l1} \text{lg2} \text{m2} \text{Cos}[\text{$\theta $2}[t]] & \text{I2}+\text{lg2}^2 \text{m2} & 0
+& 0 \\
+ 1 & 0 & 0 & 0 & 0 & 0 \\
+ 0 & 1 & 0 & 0 & 0 & 0 \\
+\end{array}
+\right)\)
+\end{doublespace}
+
+\begin{doublespace}
+\noindent\(\{0,0,\text{$\tau $1},\text{$\tau $2}\}\)
+\end{doublespace}
+
+\begin{doublespace}
+\noindent\(\pmb{\text{}}\)
+\end{doublespace}
+
+\begin{doublespace}
+\noindent\(\pmb{\text{(*}\text{ans} = \text{Inverse}[\text{DM}]. \text{Join}[ \tau -h, \{\{0\},\{0\}\}, 1]\text{*)}}\\
+\pmb{\text{ans} = \text{Simplify}[\text{Inverse}[\text{DM}] . \text{Join}[\tau  - h, \{0,0\}, 1]]}\)
+\end{doublespace}
+
+\begin{doublespace}
+\noindent\(\left\{0,0,-\left(\left(-\text{I2} \text{$\tau $1}-\text{lg2}^2 \text{m2} \text{$\tau $1}+\text{I2} \text{$\tau $2}+\text{lg2}^2 \text{m2}
+\text{$\tau $2}+g \text{I2} \text{lg1} \text{m1} \text{Cos}[\text{$\theta $1}[t]]+g \text{I2} \text{l1} \text{m2} \text{Cos}[\text{$\theta $1}[t]]+g
+\text{lg1} \text{lg2}^2 \text{m1} \text{m2} \text{Cos}[\text{$\theta $1}[t]]+g \text{l1} \text{lg2}^2 \text{m2}^2 \text{Cos}[\text{$\theta $1}[t]]+\text{l1}
+\text{lg2} \text{m2} \text{$\tau $2} \text{Cos}[\text{$\theta $2}[t]]-g \text{l1} \text{lg2}^2 \text{m2}^2 \text{Cos}[\text{$\theta $2}[t]] \text{Cos}[\text{$\theta
+$1}[t]+\text{$\theta $2}[t]]-\text{l1} \text{lg2} \text{m2} \left(\text{I2}+\text{lg2}^2 \text{m2}+\text{l1} \text{lg2} \text{m2} \text{Cos}[\text{$\theta
+$2}[t]]\right) \text{Sin}[\text{$\theta $2}[t]] \text{$\theta $1}'[t]^2-2 \text{l1} \text{lg2} \text{m2} \left(\text{I2}+\text{lg2}^2 \text{m2}\right)
+\text{Sin}[\text{$\theta $2}[t]] \text{$\theta $1}'[t] \text{$\theta $2}'[t]-\text{l1} \text{lg2} \text{m2} \left(\text{I2}+\text{lg2}^2 \text{m2}\right)
+\text{Sin}[\text{$\theta $2}[t]] \text{$\theta $2}'[t]^2\right)/\left(\left(\text{I1}+\text{lg1}^2 \text{m1}+\text{l1}^2 \text{m2}\right) \left(\text{I2}+\text{lg2}^2
+\text{m2}\right)-\text{l1}^2 \text{lg2}^2 \text{m2}^2 \text{Cos}[\text{$\theta $2}[t]]^2\right)\right),\left(\left(\text{I1}+\text{I2}+\text{lg1}^2
+\text{m1}+\text{l1}^2 \text{m2}+\text{lg2}^2 \text{m2}+2 \text{l1} \text{lg2} \text{m2} \text{Cos}[\text{$\theta $2}[t]]\right) \left(\text{$\tau
+$2}-\text{lg2} \text{m2} \left(g \text{Cos}[\text{$\theta $1}[t]+\text{$\theta $2}[t]]+\text{l1} \text{Sin}[\text{$\theta $2}[t]] \text{$\theta $1}'[t]^2\right)\right)-\left(\text{I2}+\text{lg2}^2
+\text{m2}+\text{l1} \text{lg2} \text{m2} \text{Cos}[\text{$\theta $2}[t]]\right) \left(\text{$\tau $1}-g \text{lg1} \text{m1} \text{Cos}[\text{$\theta
+$1}[t]]-g \text{l1} \text{m2} \text{Cos}[\text{$\theta $1}[t]]-g \text{lg2} \text{m2} \text{Cos}[\text{$\theta $1}[t]+\text{$\theta $2}[t]]+2 \text{l1}
+\text{lg2} \text{m2} \text{Sin}[\text{$\theta $2}[t]] \text{$\theta $1}'[t] \text{$\theta $2}'[t]+\text{l1} \text{lg2} \text{m2} \text{Sin}[\text{$\theta
+$2}[t]] \text{$\theta $2}'[t]^2\right)\right)/\left(\left(\text{I1}+\text{lg1}^2 \text{m1}+\text{l1}^2 \text{m2}\right) \left(\text{I2}+\text{lg2}^2
+\text{m2}\right)-\text{l1}^2 \text{lg2}^2 \text{m2}^2 \text{Cos}[\text{$\theta $2}[t]]^2\right),((\text{lg1} \text{m1}+\text{l1} \text{m2}) \text{Cos}[\text{$\theta
+$1}[t]]+\text{lg2} \text{m2} \text{Cos}[\text{$\theta $1}[t]+\text{$\theta $2}[t]]) \text{$\theta $1}'[t]^2+\left(\left((\text{lg1} \text{m1}+\text{l1}
+\text{m2}) \left(\text{I2}+\text{lg2}^2 \text{m2}+\text{l1} \text{lg2} \text{m2} \text{Cos}[\text{$\theta $2}[t]]\right) \text{Sin}[\text{$\theta
+$1}[t]]-\text{lg2} \text{m2} \left(\text{I1}+\text{lg1}^2 \text{m1}+\text{l1}^2 \text{m2}+\text{l1} \text{lg2} \text{m2} \text{Cos}[\text{$\theta
+$2}[t]]\right) \text{Sin}[\text{$\theta $1}[t]+\text{$\theta $2}[t]]\right) \left(-\text{$\tau $2}+g \text{lg2} \text{m2} \text{Cos}[\text{$\theta
+$1}[t]+\text{$\theta $2}[t]]+\text{l1} \text{lg2} \text{m2} \text{Sin}[\text{$\theta $2}[t]] \text{$\theta $1}'[t]^2\right)\right)/\left(\left(\text{I1}+\text{lg1}^2
+\text{m1}+\text{l1}^2 \text{m2}\right) \left(\text{I2}+\text{lg2}^2 \text{m2}\right)-\text{l1}^2 \text{lg2}^2 \text{m2}^2 \text{Cos}[\text{$\theta
+$2}[t]]^2\right)+2 \text{lg2} \text{m2} \text{Cos}[\text{$\theta $1}[t]+\text{$\theta $2}[t]] \text{$\theta $1}'[t] \text{$\theta $2}'[t]+\text{lg2}
+\text{m2} \text{Cos}[\text{$\theta $1}[t]+\text{$\theta $2}[t]] \text{$\theta $2}'[t]^2-\left(\left((\text{lg1} \text{m1}+\text{l1} \text{m2}) \left(\text{I2}+\text{lg2}^2
+\text{m2}\right) \text{Sin}[\text{$\theta $1}[t]]-\text{l1} \text{lg2}^2 \text{m2}^2 \text{Cos}[\text{$\theta $2}[t]] \text{Sin}[\text{$\theta $1}[t]+\text{$\theta
+$2}[t]]\right) \left(-\text{$\tau $1}+g \text{lg1} \text{m1} \text{Cos}[\text{$\theta $1}[t]]+g \text{l1} \text{m2} \text{Cos}[\text{$\theta $1}[t]]+g
+\text{lg2} \text{m2} \text{Cos}[\text{$\theta $1}[t]+\text{$\theta $2}[t]]-2 \text{l1} \text{lg2} \text{m2} \text{Sin}[\text{$\theta $2}[t]] \text{$\theta
+$1}'[t] \text{$\theta $2}'[t]-\text{l1} \text{lg2} \text{m2} \text{Sin}[\text{$\theta $2}[t]] \text{$\theta $2}'[t]^2\right)\right)/\left(\left(\text{I1}+\text{lg1}^2
+\text{m1}+\text{l1}^2 \text{m2}\right) \left(\text{I2}+\text{lg2}^2 \text{m2}\right)-\text{l1}^2 \text{lg2}^2 \text{m2}^2 \text{Cos}[\text{$\theta
+$2}[t]]^2\right),-g (\text{m1}+\text{m2})+((\text{lg1} \text{m1}+\text{l1} \text{m2}) \text{Sin}[\text{$\theta $1}[t]]+\text{lg2} \text{m2} \text{Sin}[\text{$\theta
+$1}[t]+\text{$\theta $2}[t]]) \text{$\theta $1}'[t]^2-\left(\left((\text{lg1} \text{m1}+\text{l1} \text{m2}) \text{Cos}[\text{$\theta $1}[t]] \left(\text{I2}+\text{lg2}^2
+\text{m2}+\text{l1} \text{lg2} \text{m2} \text{Cos}[\text{$\theta $2}[t]]\right)-\text{lg2} \text{m2} \left(\text{I1}+\text{lg1}^2 \text{m1}+\text{l1}^2
+\text{m2}+\text{l1} \text{lg2} \text{m2} \text{Cos}[\text{$\theta $2}[t]]\right) \text{Cos}[\text{$\theta $1}[t]+\text{$\theta $2}[t]]\right) \left(-\text{$\tau
+$2}+g \text{lg2} \text{m2} \text{Cos}[\text{$\theta $1}[t]+\text{$\theta $2}[t]]+\text{l1} \text{lg2} \text{m2} \text{Sin}[\text{$\theta $2}[t]]
+\text{$\theta $1}'[t]^2\right)\right)/\left(\left(\text{I1}+\text{lg1}^2 \text{m1}+\text{l1}^2 \text{m2}\right) \left(\text{I2}+\text{lg2}^2 \text{m2}\right)-\text{l1}^2
+\text{lg2}^2 \text{m2}^2 \text{Cos}[\text{$\theta $2}[t]]^2\right)+2 \text{lg2} \text{m2} \text{Sin}[\text{$\theta $1}[t]+\text{$\theta $2}[t]] \text{$\theta
+$1}'[t] \text{$\theta $2}'[t]+\text{lg2} \text{m2} \text{Sin}[\text{$\theta $1}[t]+\text{$\theta $2}[t]] \text{$\theta $2}'[t]^2+\left(\left((\text{lg1}
+\text{m1}+\text{l1} \text{m2}) \left(\text{I2}+\text{lg2}^2 \text{m2}\right) \text{Cos}[\text{$\theta $1}[t]]-\text{l1} \text{lg2}^2 \text{m2}^2
+\text{Cos}[\text{$\theta $2}[t]] \text{Cos}[\text{$\theta $1}[t]+\text{$\theta $2}[t]]\right) \left(-\text{$\tau $1}+g \text{lg1} \text{m1} \text{Cos}[\text{$\theta
+$1}[t]]+g \text{l1} \text{m2} \text{Cos}[\text{$\theta $1}[t]]+g \text{lg2} \text{m2} \text{Cos}[\text{$\theta $1}[t]+\text{$\theta $2}[t]]-2 \text{l1}
+\text{lg2} \text{m2} \text{Sin}[\text{$\theta $2}[t]] \text{$\theta $1}'[t] \text{$\theta $2}'[t]-\text{l1} \text{lg2} \text{m2} \text{Sin}[\text{$\theta
+$2}[t]] \text{$\theta $2}'[t]^2\right)\right)/\left(\left(\text{I1}+\text{lg1}^2 \text{m1}+\text{l1}^2 \text{m2}\right) \left(\text{I2}+\text{lg2}^2
+\text{m2}\right)-\text{l1}^2 \text{lg2}^2 \text{m2}^2 \text{Cos}[\text{$\theta $2}[t]]^2\right)\right\}\)
+\end{doublespace}
+
+\begin{doublespace}
+\noindent\(\pmb{\text{MatrixForm}[\text{ans}]}\)
+\end{doublespace}
+
+\begin{doublespace}
+\noindent\(\left(
+\begin{array}{c}
+ 0 \\
+ 0 \\
+ -\frac{-\text{I2} \text{$\tau $1}-\text{lg2}^2 \text{m2} \text{$\tau $1}+\text{I2} \text{$\tau $2}+\text{lg2}^2 \text{m2} \text{$\tau $2}+g \text{I2}
+\text{lg1} \text{m1} \text{Cos}[\text{$\theta $1}[t]]+g \text{I2} \text{l1} \text{m2} \text{Cos}[\text{$\theta $1}[t]]+g \text{lg1} \text{lg2}^2
+\text{m1} \text{m2} \text{Cos}[\text{$\theta $1}[t]]+g \text{l1} \text{lg2}^2 \text{m2}^2 \text{Cos}[\text{$\theta $1}[t]]+\text{l1} \text{lg2} \text{m2}
+\text{$\tau $2} \text{Cos}[\text{$\theta $2}[t]]-g \text{l1} \text{lg2}^2 \text{m2}^2 \text{Cos}[\text{$\theta $2}[t]] \text{Cos}[\text{$\theta $1}[t]+\text{$\theta
+$2}[t]]-\text{l1} \text{lg2} \text{m2} \left(\text{I2}+\text{lg2}^2 \text{m2}+\text{l1} \text{lg2} \text{m2} \text{Cos}[\text{$\theta $2}[t]]\right)
+\text{Sin}[\text{$\theta $2}[t]] \text{$\theta $1}'[t]^2-2 \text{l1} \text{lg2} \text{m2} \left(\text{I2}+\text{lg2}^2 \text{m2}\right) \text{Sin}[\text{$\theta
+$2}[t]] \text{$\theta $1}'[t] \text{$\theta $2}'[t]-\text{l1} \text{lg2} \text{m2} \left(\text{I2}+\text{lg2}^2 \text{m2}\right) \text{Sin}[\text{$\theta
+$2}[t]] \text{$\theta $2}'[t]^2}{\left(\text{I1}+\text{lg1}^2 \text{m1}+\text{l1}^2 \text{m2}\right) \left(\text{I2}+\text{lg2}^2 \text{m2}\right)-\text{l1}^2
+\text{lg2}^2 \text{m2}^2 \text{Cos}[\text{$\theta $2}[t]]^2} \\
+ \frac{\left(\text{I1}+\text{I2}+\text{lg1}^2 \text{m1}+\text{l1}^2 \text{m2}+\text{lg2}^2 \text{m2}+2 \text{l1} \text{lg2} \text{m2} \text{Cos}[\text{$\theta
+$2}[t]]\right) \left(\text{$\tau $2}-\text{lg2} \text{m2} \left(g \text{Cos}[\text{$\theta $1}[t]+\text{$\theta $2}[t]]+\text{l1} \text{Sin}[\text{$\theta
+$2}[t]] \text{$\theta $1}'[t]^2\right)\right)-\left(\text{I2}+\text{lg2}^2 \text{m2}+\text{l1} \text{lg2} \text{m2} \text{Cos}[\text{$\theta $2}[t]]\right)
+\left(\text{$\tau $1}-g \text{lg1} \text{m1} \text{Cos}[\text{$\theta $1}[t]]-g \text{l1} \text{m2} \text{Cos}[\text{$\theta $1}[t]]-g \text{lg2}
+\text{m2} \text{Cos}[\text{$\theta $1}[t]+\text{$\theta $2}[t]]+2 \text{l1} \text{lg2} \text{m2} \text{Sin}[\text{$\theta $2}[t]] \text{$\theta $1}'[t]
+\text{$\theta $2}'[t]+\text{l1} \text{lg2} \text{m2} \text{Sin}[\text{$\theta $2}[t]] \text{$\theta $2}'[t]^2\right)}{\left(\text{I1}+\text{lg1}^2
+\text{m1}+\text{l1}^2 \text{m2}\right) \left(\text{I2}+\text{lg2}^2 \text{m2}\right)-\text{l1}^2 \text{lg2}^2 \text{m2}^2 \text{Cos}[\text{$\theta
+$2}[t]]^2} \\
+ ((\text{lg1} \text{m1}+\text{l1} \text{m2}) \text{Cos}[\text{$\theta $1}[t]]+\text{lg2} \text{m2} \text{Cos}[\text{$\theta $1}[t]+\text{$\theta
+$2}[t]]) \text{$\theta $1}'[t]^2+\frac{\left((\text{lg1} \text{m1}+\text{l1} \text{m2}) \left(\text{I2}+\text{lg2}^2 \text{m2}+\text{l1} \text{lg2}
+\text{m2} \text{Cos}[\text{$\theta $2}[t]]\right) \text{Sin}[\text{$\theta $1}[t]]-\text{lg2} \text{m2} \left(\text{I1}+\text{lg1}^2 \text{m1}+\text{l1}^2
+\text{m2}+\text{l1} \text{lg2} \text{m2} \text{Cos}[\text{$\theta $2}[t]]\right) \text{Sin}[\text{$\theta $1}[t]+\text{$\theta $2}[t]]\right) \left(-\text{$\tau
+$2}+g \text{lg2} \text{m2} \text{Cos}[\text{$\theta $1}[t]+\text{$\theta $2}[t]]+\text{l1} \text{lg2} \text{m2} \text{Sin}[\text{$\theta $2}[t]]
+\text{$\theta $1}'[t]^2\right)}{\left(\text{I1}+\text{lg1}^2 \text{m1}+\text{l1}^2 \text{m2}\right) \left(\text{I2}+\text{lg2}^2 \text{m2}\right)-\text{l1}^2
+\text{lg2}^2 \text{m2}^2 \text{Cos}[\text{$\theta $2}[t]]^2}+2 \text{lg2} \text{m2} \text{Cos}[\text{$\theta $1}[t]+\text{$\theta $2}[t]] \text{$\theta
+$1}'[t] \text{$\theta $2}'[t]+\text{lg2} \text{m2} \text{Cos}[\text{$\theta $1}[t]+\text{$\theta $2}[t]] \text{$\theta $2}'[t]^2-\frac{\left((\text{lg1}
+\text{m1}+\text{l1} \text{m2}) \left(\text{I2}+\text{lg2}^2 \text{m2}\right) \text{Sin}[\text{$\theta $1}[t]]-\text{l1} \text{lg2}^2 \text{m2}^2
+\text{Cos}[\text{$\theta $2}[t]] \text{Sin}[\text{$\theta $1}[t]+\text{$\theta $2}[t]]\right) \left(-\text{$\tau $1}+g \text{lg1} \text{m1} \text{Cos}[\text{$\theta
+$1}[t]]+g \text{l1} \text{m2} \text{Cos}[\text{$\theta $1}[t]]+g \text{lg2} \text{m2} \text{Cos}[\text{$\theta $1}[t]+\text{$\theta $2}[t]]-2 \text{l1}
+\text{lg2} \text{m2} \text{Sin}[\text{$\theta $2}[t]] \text{$\theta $1}'[t] \text{$\theta $2}'[t]-\text{l1} \text{lg2} \text{m2} \text{Sin}[\text{$\theta
+$2}[t]] \text{$\theta $2}'[t]^2\right)}{\left(\text{I1}+\text{lg1}^2 \text{m1}+\text{l1}^2 \text{m2}\right) \left(\text{I2}+\text{lg2}^2 \text{m2}\right)-\text{l1}^2
+\text{lg2}^2 \text{m2}^2 \text{Cos}[\text{$\theta $2}[t]]^2} \\
+ -g (\text{m1}+\text{m2})+((\text{lg1} \text{m1}+\text{l1} \text{m2}) \text{Sin}[\text{$\theta $1}[t]]+\text{lg2} \text{m2} \text{Sin}[\text{$\theta
+$1}[t]+\text{$\theta $2}[t]]) \text{$\theta $1}'[t]^2-\frac{\left((\text{lg1} \text{m1}+\text{l1} \text{m2}) \text{Cos}[\text{$\theta $1}[t]] \left(\text{I2}+\text{lg2}^2
+\text{m2}+\text{l1} \text{lg2} \text{m2} \text{Cos}[\text{$\theta $2}[t]]\right)-\text{lg2} \text{m2} \left(\text{I1}+\text{lg1}^2 \text{m1}+\text{l1}^2
+\text{m2}+\text{l1} \text{lg2} \text{m2} \text{Cos}[\text{$\theta $2}[t]]\right) \text{Cos}[\text{$\theta $1}[t]+\text{$\theta $2}[t]]\right) \left(-\text{$\tau
+$2}+g \text{lg2} \text{m2} \text{Cos}[\text{$\theta $1}[t]+\text{$\theta $2}[t]]+\text{l1} \text{lg2} \text{m2} \text{Sin}[\text{$\theta $2}[t]]
+\text{$\theta $1}'[t]^2\right)}{\left(\text{I1}+\text{lg1}^2 \text{m1}+\text{l1}^2 \text{m2}\right) \left(\text{I2}+\text{lg2}^2 \text{m2}\right)-\text{l1}^2
+\text{lg2}^2 \text{m2}^2 \text{Cos}[\text{$\theta $2}[t]]^2}+2 \text{lg2} \text{m2} \text{Sin}[\text{$\theta $1}[t]+\text{$\theta $2}[t]] \text{$\theta
+$1}'[t] \text{$\theta $2}'[t]+\text{lg2} \text{m2} \text{Sin}[\text{$\theta $1}[t]+\text{$\theta $2}[t]] \text{$\theta $2}'[t]^2+\frac{\left((\text{lg1}
+\text{m1}+\text{l1} \text{m2}) \left(\text{I2}+\text{lg2}^2 \text{m2}\right) \text{Cos}[\text{$\theta $1}[t]]-\text{l1} \text{lg2}^2 \text{m2}^2
+\text{Cos}[\text{$\theta $2}[t]] \text{Cos}[\text{$\theta $1}[t]+\text{$\theta $2}[t]]\right) \left(-\text{$\tau $1}+g \text{lg1} \text{m1} \text{Cos}[\text{$\theta
+$1}[t]]+g \text{l1} \text{m2} \text{Cos}[\text{$\theta $1}[t]]+g \text{lg2} \text{m2} \text{Cos}[\text{$\theta $1}[t]+\text{$\theta $2}[t]]-2 \text{l1}
+\text{lg2} \text{m2} \text{Sin}[\text{$\theta $2}[t]] \text{$\theta $1}'[t] \text{$\theta $2}'[t]-\text{l1} \text{lg2} \text{m2} \text{Sin}[\text{$\theta
+$2}[t]] \text{$\theta $2}'[t]^2\right)}{\left(\text{I1}+\text{lg1}^2 \text{m1}+\text{l1}^2 \text{m2}\right) \left(\text{I2}+\text{lg2}^2 \text{m2}\right)-\text{l1}^2
+\text{lg2}^2 \text{m2}^2 \text{Cos}[\text{$\theta $2}[t]]^2} \\
+\end{array}
+\right)\)
+\end{doublespace}
+
+\begin{doublespace}
+\noindent\(\pmb{\text{}}\)
+\end{doublespace}
+
+\begin{doublespace}
+\noindent\(\pmb{\text{ans}[[6]]}\)
+\end{doublespace}
+
+\begin{doublespace}
+\noindent\(-g (\text{m1}+\text{m2})+((\text{lg1} \text{m1}+\text{l1} \text{m2}) \text{Sin}[\text{$\theta $1}[t]]+\text{lg2} \text{m2} \text{Sin}[\text{$\theta
+$1}[t]+\text{$\theta $2}[t]]) \text{$\theta $1}'[t]^2-\left(\left((\text{lg1} \text{m1}+\text{l1} \text{m2}) \text{Cos}[\text{$\theta $1}[t]] \left(\text{I2}+\text{lg2}^2
+\text{m2}+\text{l1} \text{lg2} \text{m2} \text{Cos}[\text{$\theta $2}[t]]\right)-\text{lg2} \text{m2} \left(\text{I1}+\text{lg1}^2 \text{m1}+\text{l1}^2
+\text{m2}+\text{l1} \text{lg2} \text{m2} \text{Cos}[\text{$\theta $2}[t]]\right) \text{Cos}[\text{$\theta $1}[t]+\text{$\theta $2}[t]]\right) \left(-\text{$\tau
+$2}+g \text{lg2} \text{m2} \text{Cos}[\text{$\theta $1}[t]+\text{$\theta $2}[t]]+\text{l1} \text{lg2} \text{m2} \text{Sin}[\text{$\theta $2}[t]]
+\text{$\theta $1}'[t]^2\right)\right)/\left(\left(\text{I1}+\text{lg1}^2 \text{m1}+\text{l1}^2 \text{m2}\right) \left(\text{I2}+\text{lg2}^2 \text{m2}\right)-\text{l1}^2
+\text{lg2}^2 \text{m2}^2 \text{Cos}[\text{$\theta $2}[t]]^2\right)+2 \text{lg2} \text{m2} \text{Sin}[\text{$\theta $1}[t]+\text{$\theta $2}[t]] \text{$\theta
+$1}'[t] \text{$\theta $2}'[t]+\text{lg2} \text{m2} \text{Sin}[\text{$\theta $1}[t]+\text{$\theta $2}[t]] \text{$\theta $2}'[t]^2+\left(\left((\text{lg1}
+\text{m1}+\text{l1} \text{m2}) \left(\text{I2}+\text{lg2}^2 \text{m2}\right) \text{Cos}[\text{$\theta $1}[t]]-\text{l1} \text{lg2}^2 \text{m2}^2
+\text{Cos}[\text{$\theta $2}[t]] \text{Cos}[\text{$\theta $1}[t]+\text{$\theta $2}[t]]\right) \left(-\text{$\tau $1}+g \text{lg1} \text{m1} \text{Cos}[\text{$\theta
+$1}[t]]+g \text{l1} \text{m2} \text{Cos}[\text{$\theta $1}[t]]+g \text{lg2} \text{m2} \text{Cos}[\text{$\theta $1}[t]+\text{$\theta $2}[t]]-2 \text{l1}
+\text{lg2} \text{m2} \text{Sin}[\text{$\theta $2}[t]] \text{$\theta $1}'[t] \text{$\theta $2}'[t]-\text{l1} \text{lg2} \text{m2} \text{Sin}[\text{$\theta
+$2}[t]] \text{$\theta $2}'[t]^2\right)\right)/\left(\left(\text{I1}+\text{lg1}^2 \text{m1}+\text{l1}^2 \text{m2}\right) \left(\text{I2}+\text{lg2}^2
+\text{m2}\right)-\text{l1}^2 \text{lg2}^2 \text{m2}^2 \text{Cos}[\text{$\theta $2}[t]]^2\right)\)
+\end{doublespace}
+
+\begin{doublespace}
+\noindent\(\pmb{\text{}}\)
+\end{doublespace}
+
+\begin{doublespace}
+\noindent\(\pmb{\text{}}\)
+\end{doublespace}
+
+\begin{doublespace}
+\noindent\(\pmb{\text{ans}[[5]]}\)
+\end{doublespace}
+
+\begin{doublespace}
+\noindent\(((\text{lg1} \text{m1}+\text{l1} \text{m2}) \text{Cos}[\text{$\theta $1}[t]]+\text{lg2} \text{m2} \text{Cos}[\text{$\theta $1}[t]+\text{$\theta
+$2}[t]]) \text{$\theta $1}'[t]^2+\left(\left((\text{lg1} \text{m1}+\text{l1} \text{m2}) \left(\text{I2}+\text{lg2}^2 \text{m2}+\text{l1} \text{lg2}
+\text{m2} \text{Cos}[\text{$\theta $2}[t]]\right) \text{Sin}[\text{$\theta $1}[t]]-\text{lg2} \text{m2} \left(\text{I1}+\text{lg1}^2 \text{m1}+\text{l1}^2
+\text{m2}+\text{l1} \text{lg2} \text{m2} \text{Cos}[\text{$\theta $2}[t]]\right) \text{Sin}[\text{$\theta $1}[t]+\text{$\theta $2}[t]]\right) \left(-\text{$\tau
+$2}+g \text{lg2} \text{m2} \text{Cos}[\text{$\theta $1}[t]+\text{$\theta $2}[t]]+\text{l1} \text{lg2} \text{m2} \text{Sin}[\text{$\theta $2}[t]]
+\text{$\theta $1}'[t]^2\right)\right)/\left(\left(\text{I1}+\text{lg1}^2 \text{m1}+\text{l1}^2 \text{m2}\right) \left(\text{I2}+\text{lg2}^2 \text{m2}\right)-\text{l1}^2
+\text{lg2}^2 \text{m2}^2 \text{Cos}[\text{$\theta $2}[t]]^2\right)+2 \text{lg2} \text{m2} \text{Cos}[\text{$\theta $1}[t]+\text{$\theta $2}[t]] \text{$\theta
+$1}'[t] \text{$\theta $2}'[t]+\text{lg2} \text{m2} \text{Cos}[\text{$\theta $1}[t]+\text{$\theta $2}[t]] \text{$\theta $2}'[t]^2-\left(\left((\text{lg1}
+\text{m1}+\text{l1} \text{m2}) \left(\text{I2}+\text{lg2}^2 \text{m2}\right) \text{Sin}[\text{$\theta $1}[t]]-\text{l1} \text{lg2}^2 \text{m2}^2
+\text{Cos}[\text{$\theta $2}[t]] \text{Sin}[\text{$\theta $1}[t]+\text{$\theta $2}[t]]\right) \left(-\text{$\tau $1}+g \text{lg1} \text{m1} \text{Cos}[\text{$\theta
+$1}[t]]+g \text{l1} \text{m2} \text{Cos}[\text{$\theta $1}[t]]+g \text{lg2} \text{m2} \text{Cos}[\text{$\theta $1}[t]+\text{$\theta $2}[t]]-2 \text{l1}
+\text{lg2} \text{m2} \text{Sin}[\text{$\theta $2}[t]] \text{$\theta $1}'[t] \text{$\theta $2}'[t]-\text{l1} \text{lg2} \text{m2} \text{Sin}[\text{$\theta
+$2}[t]] \text{$\theta $2}'[t]^2\right)\right)/\left(\left(\text{I1}+\text{lg1}^2 \text{m1}+\text{l1}^2 \text{m2}\right) \left(\text{I2}+\text{lg2}^2
+\text{m2}\right)-\text{l1}^2 \text{lg2}^2 \text{m2}^2 \text{Cos}[\text{$\theta $2}[t]]^2\right)\)
+\end{doublespace}
+
+\begin{doublespace}
+\noindent\(\pmb{\text{}}\)
+\end{doublespace}
+
+\end{document}
